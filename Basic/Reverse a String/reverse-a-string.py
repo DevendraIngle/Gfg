@@ -2,8 +2,9 @@
 
 class Solution:
      def reverseWord(self, str: str) -> str:
-        k = str[::-1]   #By slicing method
-        return k
+        k = list(str)   #By function
+        k.reverse()
+        return "".join(k)
 
 
 #{ 
